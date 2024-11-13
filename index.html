@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK Services Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>RK SERVICES</h1>
+        <p class="subtitle">ONLINE</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Your One-Stop Solution for All Government Services</h2>
+                <p>Quick, Reliable & Hassle-free Processing</p>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2534/2534183.png" alt="PAN Card">
+                </div>
+                <h3>PAN Card Services</h3>
+                <ul>
+                    <li>New PAN Card Application</li>
+                    <li>PAN Card Correction</li>
+                    <li>Download e-PAN</li>
+                </ul>
+                <button onclick="applyNow('pan')">Apply Now</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3976/3976631.png" alt="Scholarship">
+                </div>
+                <h3>Scholarship Services</h3>
+                <ul>
+                    <li>Scholarship Application</li>
+                    <li>Scholarship Renewal</li>
+                    <li>Status Check</li>
+                </ul>
+                <button onclick="applyNow('scholarship')">Apply Now</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1570/1570929.png" alt="Other Services">
+                </div>
+                <h3>Other Services</h3>
+                <ul>
+                    <li>Income Certificate</li>
+                    <li>Caste Certificate</li>
+                    <li>Document Verification</li>
+                </ul>
+                <button onclick="applyNow('other')">Apply Now</button>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/1584/1584892.png" alt="Fast Processing">
+                <h4>Fast Processing</h4>
+                <p>Quick turnaround time for all services</p>
+            </div>
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/2910/2910756.png" alt="Secure">
+                <h4>100% Secure</h4>
+                <p>Your data is safe with us</p>
+            </div>
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/1534/1534938.png" alt="Support">
+                <h4>24/7 Support</h4>
+                <p>Always here to help you</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/3059/3059590.png" alt="Phone">
+                    <h3>Call Us</h3>
+                    <p>+91 90147 48319</p>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/552/552486.png" alt="Email">
+                    <h3>Email Us</h3>
+                    <p>www.ramakrishnayerukala44@gmail.com</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="applicationModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Application Form</h2>
+                <form id="applicationForm" onsubmit="submitForm(event)">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <select id="serviceType" required>
+                        <option value="">Select Service</option>
+                        <option value="pan">PAN Card</option>
+                        <option value="scholarship">Scholarship</option>
+                        <option value="income">Income Certificate</option>
+                        <option value="caste">Caste Certificate</option>
+                    </select>
+                    <button type="submit">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 RK Services Online. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
